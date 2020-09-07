@@ -28,19 +28,19 @@ function setup() {
 	roof = new Roof(400, 50, 600, 20);
 
 	bobObject1 = new Bob(400, 600, 90);
-	rope1 = new Rope(bobObject1.body, roof.body, 0);
+	rope1 = new Rope(bobObject1.body, roof.body, 0, 0);
 	
 	bobObject2 = new Bob(490, 600, 90);
 	bobObject3 = new Bob(580, 600, 90);
 
-	rope2 = new Rope(bobObject2.body, roof.body, 90);
-	rope3 = new Rope(bobObject3.body, roof.body, 180);
+	rope2 = new Rope(bobObject2.body, roof.body, 90, 0);
+	rope3 = new Rope(bobObject3.body, roof.body, 180, 0);
 
 	bobObject4 = new Bob(310, 600, 90);
 	bobObject5 = new Bob(220, 600, 90);
 
-	rope4 = new Rope(bobObject4.body, roof.body, -90);
-	rope5 = new Rope(bobObject5.body, roof.body, -180);
+	rope4 = new Rope(bobObject4.body, roof.body, -90, 0);
+	rope5 = new Rope(bobObject5.body, roof.body, -180, 0);
 
 	Engine.run(engine);
   
